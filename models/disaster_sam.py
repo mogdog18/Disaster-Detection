@@ -3,7 +3,7 @@ from models.simple_decoder import Decoder
 import torch.nn as nn
 
 
-class DisasterNet(nn.Module):
+class DisasterSam(nn.Module):
     def __init__(self, num_classes, freeze_encoder=True):
         super().__init__()
         self.encoder = Encoder(freeze=freeze_encoder)
