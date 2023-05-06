@@ -1,4 +1,6 @@
-from .disaster_sam import DisasterSam
+from .disaster_sam import DisasterSamV1, DisasterSamV2
 
 
-__all__ = ['DisasterSam']
+class ModelRegistry:
+    DisasterSamV1 = DisasterSamV1
+    DisasterSamV2 = DisasterSamV2
